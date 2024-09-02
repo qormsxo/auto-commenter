@@ -1,0 +1,32 @@
+{
+  "name": "auto-commenter",
+  "version": "1.0.0",
+  "description": "A CLI tool to automatically add comments to functions in JavaScript files.",
+  "main": "lib/index.js",
+  "bin": {
+    "auto-commenter": "bin/auto-commenter.js"
+  },
+  "scripts": {
+    "test": "mocha --require @babel/register --recursive test"
+  },
+  "dependencies": {
+    "acorn": "^8.12.1",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "acorn": "^8.12.1",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "typescript": "^5.5.4"
+  },
+  "keywords": [
+    "cli",
+    "comment",
+    "documentation",
+    "javascript"
+  ],
+  "author": "qormsxo",
+  "license": "MIT"
+}
