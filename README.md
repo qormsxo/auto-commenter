@@ -1,4 +1,4 @@
-# auto-commenter
+# auto-commenter 0.1.2
 
 A CLI tool that automatically adds comments to functions in JavaScript files.
 
@@ -20,4 +20,41 @@ Example
 
 ``` bash 
 auto-commenter --directory .\test
+```
+
+```javascript
+
+/**
+ * add
+ * @param a - Description
+ * @param b - Description
+ * @returns - Description
+ */
+
+function add(a, b) {
+    return a + b;
+}
+
+
+/**
+ * multiply
+ * @param a - Description
+ * @param b - Description
+ * @returns - Description
+ */
+
+const multiply = function(a, b) {
+    return a * b;
+};
+
+
+/**
+ * divide
+ * @param a - Description
+ * @param b - Description
+ * @returns - Description
+ */
+
+const divide = (a, b) => a / b;
+
 ```
