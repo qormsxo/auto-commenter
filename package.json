@@ -7,7 +7,7 @@
     "auto-commenter": "bin/auto-commenter.js"
   },
   "scripts": {
-    "test": "mocha --require @babel/register --recursive test"
+    "test": "auto-commenter -d test"
   },
   "repository": {
     "type": "git",
