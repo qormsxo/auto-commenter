@@ -1,4 +1,4 @@
-# auto-commenter 0.1.2
+# auto-commenter 0.1.4
 
 A CLI tool that automatically adds comments to functions in JavaScript files.
 
