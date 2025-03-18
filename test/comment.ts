@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-
 function tsAdd(a: number, b: number): number {
     return a + b;
 }
+
 
 const tsMultiply : Function = (a: number, b: number): number => {
     return a * b;
@@ -39,3 +39,25 @@ const fetchWithAxios = async (url: string): Promise<any> => {
         throw error;
     }
 };
+
+class Calculator {
+    private name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+    
+    add(a: number, b: number): number {
+        return a + b;
+    }
+    
+    multiply(a: number, b: number): number {
+        return a * b;
+    }
+
+    async fetchResult(url: string): Promise<number> {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    }
+}
